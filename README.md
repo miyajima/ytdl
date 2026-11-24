@@ -32,8 +32,11 @@ Users are responsible for complying with copyright laws and the terms of service
 ## Install
 
 ```bash
-npm install -g @kanketsu/ytdl
+npm install -g https://codeload.github.com/miyajima/ytdl/tar.gz/refs/heads/main
+ytdl --help
 ```
+
+For video downloads with yt-dlp, if npm reports `ESTRICTALLOWSCRIPTS` for an optional dependency, repeat the install with `--ignore-scripts`. Optional features such as Torrent may still need their dependencies installed separately.
 
 Requires [yt-dlp](https://github.com/yt-dlp/yt-dlp) and [ffmpeg](https://ffmpeg.org/). On first run, ytdl will offer to install them automatically if missing. To install manually:
 

@@ -6,9 +6,6 @@
     "ytdl": "./cli.js"
   },
   "type": "module",
-  "scripts": {
-    "postinstall": "node lib/check-deps.js --quiet || true"
-  },
   "files": [
     "cli.js",
     "bin/",

@@ -32,8 +32,11 @@
 ## インストール
 
 ```bash
-npm install -g @kanketsu/ytdl
+npm install -g https://codeload.github.com/miyajima/ytdl/tar.gz/refs/heads/main
+ytdl --help
 ```
+
+yt-dlp で動画を保存する場合、任意の依存パッケージが原因で npm に `ESTRICTALLOWSCRIPTS` と表示されたら、インストールコマンドに `--ignore-scripts` を付けて再実行できます。Torrent などの機能を使う場合は、追加のパッケージが必要になることがあります。
 
 [yt-dlp](https://github.com/yt-dlp/yt-dlp) と [ffmpeg](https://ffmpeg.org/) が必要です。初回実行時に未インストールであれば自動インストールを提案します。手動でインストールする場合:
 
